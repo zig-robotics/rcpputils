@@ -1,0 +1,18 @@
+.{
+    .name = "rcpputils",
+    .version = "2.6.3",
+    .dependencies = .{
+        .rcpputils = .{
+            .url = "https://github.com/ros2/rcpputils/archive/refs/heads/iron.tar.gz",
+            .hash = "1220dd366a3e3b19d8efa7e4d645b9d4cb822f55e04d436bce3692a27a31791ab5a4",
+        },
+        .rcutils = .{
+            .url = "https://github.com/zig-robotics/rcutils/archive/main.tar.gz",
+            .hash = "1220d9ff4d5cfc0d1eb60c345f66f754eee5505f512fb59bb35e6ffa3c25cfd4167c",
+        }
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
