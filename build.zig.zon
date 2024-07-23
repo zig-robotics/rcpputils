@@ -1,14 +1,14 @@
 .{
     .name = "rcpputils",
-    .version = "2.6.3",
+    .version = "2.11.0",
     .dependencies = .{
         .rcpputils = .{
-            .url = "https://github.com/ros2/rcpputils/archive/refs/heads/iron.tar.gz",
-            .hash = "1220dd366a3e3b19d8efa7e4d645b9d4cb822f55e04d436bce3692a27a31791ab5a4",
+            .url = "https://github.com/ros2/rcpputils/archive/tags/2.11.0.tar.gz", // Jazzy
+            .hash = "122029bc63bb4f01804e148ef0178292865e073cda5e9355696e399cb76d8281a030",
         },
         .rcutils = .{
-            .url = "https://github.com/zig-robotics/rcutils/archive/main.tar.gz",
-            .hash = "1220d9ff4d5cfc0d1eb60c345f66f754eee5505f512fb59bb35e6ffa3c25cfd4167c",
+            .url = "https://github.com/zig-robotics/rcutils/archive/647dad504b790580206f90f57a07e62c2701319a.tar.gz",
+            .hash = "122037f70bcd7974dd0cdcb5a7b58e49053214635d77aa8a7e4aa0c5a533e12b12cf",
         }
     },
     .paths = .{
