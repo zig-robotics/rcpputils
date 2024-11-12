@@ -11,6 +11,7 @@ pub fn build(b: *std.Build) void {
         .root_module = .{
             .target = target,
             .optimize = optimize,
+            .pic = if (linkage == .dynamic) true else null,
         },
         .name = "rcpputils",
         .kind = .lib,
@@ -37,8 +38,10 @@ pub fn build(b: *std.Build) void {
             "src/env.cpp",
             "src/shared_library.cpp",
         },
-        .flags = &[_][]const u8{
+        .flags = &.{
             "--std=c++17",
+            "-fvisibility=hidden",
+            "-fvisibility-inlines-hidden",
         },
     });
 
